@@ -1,82 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects </title>
-    <link rel="styleshee>
-</head>
-<body>
-<div class="ui-page ui-page-active" id="pageSwipe">
-	<header class="ui-header">
-		<h2 class="ui-title">Swipe Event</h2>
-	</header>
-	<div id="content" class="ui-content content-padding">I am just writing herrcoz ghe
-   Is to be ssipedd </div>
-</div>
-
-
-
-  <script>
-(function() {
-    var min_horizontal_move = 30;
-    var max_vertical_move = 30;
-    var within_ms = 1000;
- 
-    var start_xPos;
-    var start_yPos;
-    var start_time;
-    function touch_start(event) {
-        start_xPos = event.touches[0].pageX;
-        start_yPos = event.touches[0].pageY;
-        start_time = new Date();
-    }
- 
- 
-    function touch_end(event) {
-        var end_xPos = event.changedTouches[0].pageX;
-        var end_yPos = event.changedTouches[0].pageY;
-        var end_time = new Date();
-        let move_x = end_xPos - start_xPos;
-        let move_y = end_yPos - start_yPos;
-        let elapsed_time = end_time - start_time;
-        if (Math.abs(move_x) > min_horizontal_move && Math.abs(move_y) < max_vertical_move && elapsed_time < within_ms) {
-            if (move_x < 0) {
-               alert("left");
-            } else {
-               alert("right");
-            }
-        }
-    }
- 
-    var content = document.getElementById("content");
-    content.addEventListener('touchstart', touch_start);
-    content.addEventListener('touchend', touch_end);
- 
-})();
- 
- </script>  
-   <footer>
-       <p>Copyright &copy; 2019, Code Addict</p>
-   </footer>
-    
-</body>
+<html>
+ <head> 
+  <title>own website</title> 
+  <link rel="stylesheet" href="style.css">
+ </head> 
+ <body> 
+  <div class="banner"></div> 
+  <div class="navbar"></div> 
+  <img src="Azz.png"/>
+  <ul> 
+   <li><a href="#">HOME</a></li> 
+   <li><a href="#">CONTACT</a></li> 
+   <li><a href="#">EDUCATION</a></li> 
+   <li><a href="#">ABOUT</a></li> 
+  </ul> 
+  <div class="content"> 
+   <h1>Mohammed Ahsan </h1> 
+  </div> 
+  <p>22 october 2001</p> 
+  <div> 
+   <form> 
+    <a href="image.html"> <input type="button"<span></span> value="PHOTOS"> </a> 
+    <a href="window.close()"> <input type="button" <span></span> value="EXIT"&gt; </a> 
+   </form> 
+  </div> 
+ </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
